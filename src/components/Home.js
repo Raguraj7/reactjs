@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Flexbox from "./Flexbox";
 import Ref from "./Ref";
 
 const Home = ({a=20}) => {
@@ -12,7 +13,7 @@ const Home = ({a=20}) => {
   // console.log(arr[3].name);
   return (
     <>
-    <div className="text-xl font-semibold">
+    {/* <div className="text-xl font-semibold">
       dsifksjdfhkjsdhfuhkkhsd
     </div>
     <div className="text-center">
@@ -23,7 +24,8 @@ const Home = ({a=20}) => {
         Stop Sharing
       </span>
     </div>
-    </div>
+    </div> */}
+    <Flexbox/>
     </>
   );
 };
