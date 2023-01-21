@@ -4,9 +4,9 @@ const Flexbox = () => {
     return (
         <>
         <div className="flex flex-wrap gap-6 justify-center items-center m-3">
-          {/* {arr.map((d,i)=>(
+          {arr.map((d,i)=>(
             <div key={i} className='bg-indigo-500 text-white px-6 py-1 rounded-full'> {d}</div>
-          ))}  */}
+          ))} 
 
            {arrobj.map((obj,i)=>(
             <div key={i} className={`bg-indigo-500 ${obj.color==='amber'?'text-amber-500':obj.color==='slate'?'text-slate-500':obj.color==='blue'?'text-blue-500':'text-white'} px-6 py-1 rounded-full `}> {obj.name}</div>
