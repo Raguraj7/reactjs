@@ -1,53 +1,39 @@
-// import { useState } from "react";
+const Ref = ({title,setTitle}) => {
+    console.log(title);
+    // const changeName=()=>{
+    //    setTitle([{
+    //     ...title,Username:{
+    //         firstName:'testing',
+    //         ...title.lastname
+    //     }
+    //    }])
 
-// const Ref = ({title,link}) => {
-//     const [s, setS] = useState('Hello')
-//     const [s1, setS1] = useState(false)
-//     const [array, setArray] = useState([{name:'testing',age:'50',city:'tirchy',address:{state:'TN',country:'INDIA'}}])
-//     console.log(s.length);
-//     const sd=()=>{
-// setS('welcome')
+    // }
+    
+    return (
+        <>
+        {/* <button className="m-2 p-3 bg-indigo-500 text-center" onClick={()=>setTitle([{
+        ...title,Username:{...title.Username,
+            firstName:'testing',
+            lastname:'idfdklhfgkdf'
+        }
+       }])}>update</button>
+       onClick={()=>setTitle(...title[{Username:{firstName:'testing',}}])}
+       */}
+       {/* <button className="m-2 p-3 bg-indigo-500 text-center" onClick={()=>setTitle([title[0].={userfirstName:'testing',lastName:'testing2'}])}>update</button> */}
+        {title.map((user,i)=>(
+            <div key={i}>
+                <p> {user.Username.firstName}</p>
+                <button className="bg-zinc-500 p-1 m-3" onClick={()=>setTitle([...title],title[i].Username.firstName='trichyyyyyy')}>Update</button>
+                
+            </div>
+            
+        ))}
+        {JSON.stringify(title)}
+        {console.log('************************',title)}
+        
+        </>
+    );
+}
 
-//     }
-//     const sd1=()=>{
-//         // setS1(true)
-//         setS1(!s1)
-//     }
-//     return (
-//         <>
-//         {/* <Ref data={...props}/> */}
-//         {/* <button onClick={()=>console.log(props.link)}>
-//             {props.title}
-//         {</button> */}
-//        <div>
-//         value
-//        {s}
-//        </div>
-
-//          {/* {s.length>0 ?title.map((t,i)=><div key={i}> {t}</div>):'notilte'} */}
-//          {s1&&title.map((t,i)=><div key={i}> {t}</div>)}
-//         <button onClick={sd} className=''>
-//             button
-//         </button>
-//         <button onClick={sd1} className=''>
-//             buttonSrdtds
-//         </button>
-//         {/* {array.map((arr,i)=>{
-//            return <div>
-// {console.log(arr.name)}
-// {arr.name}
-//             </div>
-// })} */}
-//         {array.map((f,i)=>(
-//             <div key={i}>
-// {console.log(f.name)}
-// {f.name}
-//             </div>
-//         ))}
-       
-//         {/* <a href={link} target={"_blank"} className='no-underline bg-gray-300 rounded-full text-sm hover:bg-gray-500 text-red-700 p-2 m-10  text-center border border-yellow-500'>{title}</a> */}
-//         </>
-//     );
-// }
-
-// export default Ref;
+export default Ref;

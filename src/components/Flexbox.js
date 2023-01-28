@@ -1,5 +1,5 @@
-const Flexbox = () => {
-  const arrobj=[{name:'test',color:'amber'},{name:'test1',color:'gray'},{name:'test',color:'slate'},{name:'test',color:'blue'},{name:'test',color:'yellow'}]  
+const Flexbox = ({arrobj}) => {
+  
   const arr=['test','test2','test3', 'test4', 'test5','test6','test','test2','test3','test','test2','test3','test','test2','test3','test','test2','test3','test','test2','test3','test','test2','test3',]
     return (
         <>
